@@ -16,6 +16,12 @@ members = [
   "wezterm-ssh",
   "wezterm-surface",
   "wezterm-uds",
+  "xshell-ai/xshell-workspaces",
+  "xshell-ai/xshell-themes",
+  "xshell-ai/xshell-finder",
+  "xshell-ai/xshell-agent-manager",
+  "xshell-ai/xshell-sidebar",
+  "xshell-ai/xshell-hook",
 ]
 resolver = "2"
 exclude = [

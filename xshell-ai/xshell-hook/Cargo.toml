@@ -1,0 +1,13 @@
+[package]
+name = "xshell-hook"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[[bin]]
+name = "xshell-hook"
+path = "src/main.rs"
+
+[dependencies]
+
+[dev-dependencies]
