@@ -1,0 +1,9 @@
+[package]
+name = "xshell-finder"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[target.'cfg(target_os = "macos")'.dependencies]
+
+[dev-dependencies]
