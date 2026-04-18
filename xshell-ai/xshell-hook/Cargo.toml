@@ -9,5 +9,8 @@ name = "xshell-hook"
 path = "src/main.rs"
 
 [dependencies]
+serde_json = "1"
+libc = "0.2"
 
 [dev-dependencies]
+tempfile = "3"

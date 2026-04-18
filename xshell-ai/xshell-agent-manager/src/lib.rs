@@ -1,13 +1,11 @@
-pub fn crate_name() -> &'static str {
-    "xshell-agent-manager"
-}
+pub mod error;
+pub mod events;
+pub mod server;
+pub mod socket_path;
+pub mod state;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn smoke_crate_name() {
-        assert_eq!(crate_name(), "xshell-agent-manager");
-    }
-}
+pub use error::{AgentError, Result};
+pub use events::{parse_event, HookEvent, PaneId};
+pub use server::{start_server, AgentStoreHandle};
+pub use socket_path::default_socket_path;
+pub use state::{apply_event, AgentState, AgentStatus, AgentStore};
