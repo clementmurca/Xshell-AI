@@ -8102,6 +8102,15 @@ checksum = "3ae8337f8a065cfc972643663ea4279e04e7256de865aa66fe25cec5fb912d3f"
 [[package]]
 name = "xshell-agent-manager"
 version = "0.1.0"
+dependencies = [
+ "chrono",
+ "libc",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "thiserror 1.0.69",
+ "tokio",
+]
 
 [[package]]
 name = "xshell-finder"
@@ -8110,6 +8119,11 @@ version = "0.1.0"
 [[package]]
 name = "xshell-hook"
 version = "0.1.0"
+dependencies = [
+ "libc",
+ "serde_json",
+ "tempfile",
+]
 
 [[package]]
 name = "xshell-sidebar"
