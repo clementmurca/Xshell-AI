@@ -1,13 +1,11 @@
-pub fn crate_name() -> &'static str {
-    "xshell-themes"
-}
+pub mod color;
+pub mod error;
+pub mod import;
+pub mod parser;
+pub mod storage;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn smoke_crate_name() {
-        assert_eq!(crate_name(), "xshell-themes");
-    }
-}
+pub use color::{Color, ColorScheme};
+pub use error::{Result, ThemeError};
+pub use import::{import_from_url, read_bounded, MAX_BYTES, TIMEOUT};
+pub use parser::{parse_file, parse_reader};
+pub use storage::{delete, list, load, save_raw, themes_dir};
